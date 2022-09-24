@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>room</title>
+    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+</head>
+<body>
+    <a-scene>
+        <a-entity position="0 4 15">
+            <a-camera></a-camera>
+        </a-entity>
+        
+        <a-box depth="10" width="20" height="0.5" src="assets/floor.jpeg"></a-box>
+        <a-box depth="0.5" width="20" height="10" position="0 5 -5" src="assets/wall.jpeg"></a-box>
+        <a-box depth="5" width="10" height="0.25" position="0 0.25 0" src="assets/mat.jpeg"></a-box>
+        <a-cylinder radius="0.5" height="2" position="0 1.375 0" src="assets/wood.jpeg"></a-cylinder>
+        <a-box depth="5" width="5" height="0.5" position="0 2.375 0" src="assets/wood.jpeg"></a-box>
+
+        <a-entity position="4 0.25 0" rotation="0 90 0">
+            <a-cylinder radius="1" height="0.25" src="assets/steel.jpeg" position="0 0.125 0"></a-cylinder>
+            <a-cylinder radius="0.25" height="1.5" src="assets/steel.jpeg" position="0 0.75 0"></a-cylinder>
+            <a-cylinder radius="1" height="0.25" src="assets/pillow.jpeg" position="0 1.625 0"></a-cylinder>
+            <a-cylinder radius="1" height="0.25" src="assets/pillow.jpeg" position="0 2.625 1" rotation="90 0 0"></a-cylinder>
+        </a-entity>
+
+        <a-entity position="-4 0.25 0" rotation="0 -90 0">
+            <a-cylinder radius="1" height="0.25" src="assets/steel.jpeg" position="0 0.125 0"></a-cylinder>
+            <a-cylinder radius="0.25" height="1.5" src="assets/steel.jpeg" position="0 0.75 0"></a-cylinder>
+            <a-cylinder radius="1" height="0.25" src="assets/pillow.jpeg" position="0 1.625 0"></a-cylinder>
+            <a-cylinder radius="1" height="0.25" src="assets/pillow.jpeg" position="0 2.625 1" rotation="90 0 0"></a-cylinder>
+        </a-entity>
+
+        <a-entity position="0 10 0">
+            <a-cylinder radius="0.1" height="3" position="0 -1.5 0" color="#333333"></a-cylinder>
+            <a-cone radius="0.5" height="1" position="0 -3 0" color="#333333"></a-cone>
+            <a-sphere position="0 -3.5 0" radius="0.5" color="#f5bd1f"></a-sphere>
+        </a-entity>
+
+        <a-box depth="0.05" width="4.4" height="3.2" position="0 5 -4.75" src="assets/paint_star.webp"></a-box>
+        <a-box depth="0.05" width="3" height="3.5" position="-6 5 -4.75" src="assets/paint_oak.webp"></a-box>
+        <a-box depth="0.05" width="3" height="4.25" position="6 5 -4.75" src="assets/paint_mona.webp"></a-box>
+        
+        <a-sky src="assets/sky.webp"></a-sky>
+    </a-scene>
+</body>
+</html>
